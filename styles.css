@@ -1,0 +1,190 @@
+body {
+    background-color: #2f4156;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container {
+    max-width: 1200px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding on the left and right */
+}
+
+.navbar {
+    font-size: 1.2em; /* Increase the font size */
+    padding: 10px; /* Add padding to make the navbar bigger */  
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Alata", sans-serif;
+}
+
+.navbar h1 {
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h3 {
+    font-family: "Albert Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300; /* Light weight */
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-family: "Albert Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700; /* Bold weight */
+    font-style: normal;
+    margin-top: 0;
+}
+
+section {
+    margin-left: 120px;
+    margin-right: 115px;
+}
+
+.film {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 100px; /* Adjust the gap between items as needed */
+}
+
+.persection .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.review {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    height: 200px; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.circle {
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: static;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+}
+
+.review h3 {
+    margin: 0; 
+}
+.review h4{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 1.5em;
+}
+h5 {
+    font-family: "Albert Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300; 
+    font-style: normal;
+    margin: 0;
+    font-size: 1.5em;
+
+}
+
+.paragraph-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.paragraph-container p {
+    flex: 1;
+    margin-top: 10px;
+}
+p {
+    font-family: "Albert Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700; 
+    font-style: normal;
+    margin: 0;
+    font-size: 1em;
+}
+
+.circle-user {
+    background-color: grey;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+h2{
+    font-family: "Albert Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 0;
+}
+    
+.user-header {
+    display: flex;
+    flex-direction: row;
+}
+.circle-username{
+    display: flex;
+    align-items: left;
+    flex-direction: row;
+    padding-left: 100px;
+}
+
+.circle-username h2{
+    padding-top: 60px;
+    padding-left: 20px;
+}
+.numbers{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    padding-left: 700px;
+    gap: 50px;
+    padding-right: 150px;
+    padding-top: 60px;
+}
+.div-left{
+    display: flex;
+    align-items: left;
+    padding-left: 550px;
+}
+.recent-review{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+}
+.reviews{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 100px;
+}
+.reviews h2{
+    padding: 0;
+    margin: 0;
+}
+
+
