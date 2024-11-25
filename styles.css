@@ -41,8 +41,8 @@ nav {
     justify-content: space-around;
     flex-grow: 1;
     font-size: 1.2em;
-    padding-left: 400px;
-    padding-right: 400px;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 
 nav .main { 
@@ -64,8 +64,8 @@ nav button{
 
 /* Main */
 #side-borders {
-    padding-left: 400px;
-    padding-right: 400px;
+    padding-left: 12%;
+    padding-right: 12%;
     color: #cccccc;
 }
 
@@ -180,8 +180,8 @@ footer {
     justify-content: space-around;
     flex-grow: 1;
     font-size: 1.2em;
-    padding-left: 400px;
-    padding-right: 400px;
+    padding-left: 12%;
+    padding-right: 12%;
     a{
         text-decoration: none;
     }
