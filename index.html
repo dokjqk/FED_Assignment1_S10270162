@@ -3,126 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CineFix Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>CineFix</title>
+    <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <h1><a href="index.html">CineFix</a></h1>
-            <div class="div-left">
-                <h1><a href="user.html">User</a></h1>
-                <h1><a href="films.html">Films</a></h1>
-                <h1><a href="friends.html">Friends</a></h1>
-                <h1><a href="log.html">Log</a></h1>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h3>NEW FROM FRIENDS</h3>
-            <hr>
-            <div class="film">
-                <div class="persection">
-                    <img src="https://a.ltrbxd.com/resized/sm/upload/rj/yc/zl/ex/g8IQhqYYLERU0UxjVaySP46PFEZ-0-230-0-345-crop.jpg?v=d867145245" alt="Film">
-                    <div class="info">
-                        <h4>@magicalwizard5</h4>
-                        <h4>2/5</h4>
-                    </div>
-                </div>
-                <div class="persection">
-                    <img src="https://a.ltrbxd.com/resized/film-poster/4/9/0/6/2/49062-howl-s-moving-castle-0-230-0-345-crop.jpg?v=fde81bda52" alt="Film">
-                    <div class="info">
-                        <h4>@kat</h4>
-                        <h4>4/5</h4>
-                    </div>
-                </div>
-                <div class="persection">
-                    <img src="https://a.ltrbxd.com/resized/sm/upload/xx/io/jp/45/the-truman-show-0-230-0-345-crop.jpg?v=704ba393f7" alt="Film">
-                    <div class="info">
-                        <h4>@david.m</h4>
-                        <h4>4/5</h4>
-                    </div>
-                </div>
-                <div class="persection">
-                    <img src="https://a.ltrbxd.com/resized/film-poster/5/1/9/2/1/51921-spirited-away-0-230-0-345-crop.jpg?v=a3ad463c55" alt="Film">
-                    <div class="info">
-                        <h4>@reibu</h4>
-                        <h4>4/5</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h3>HOTTEST FILMS RIGHT NOW</h3>
-            <hr>
-            <div class="film">
-                <div class="persection">
-                    <img src="https://a.ltrbxd.com/resized/sm/upload/rj/yc/zl/ex/g8IQhqYYLERU0UxjVaySP46PFEZ-0-230-0-345-crop.jpg?v=d867145245" alt="Film">
-                </div>
-                <div class="persection">
-                    <img src="https://a.ltrbxd.com/resized/film-poster/4/9/0/6/2/49062-howl-s-moving-castle-0-230-0-345-crop.jpg?v=fde81bda52" alt="Film">
-                </div>
-                <div class="persection">
-                    <img src="https://a.ltrbxd.com/resized/sm/upload/xx/io/jp/45/the-truman-show-0-230-0-345-crop.jpg?v=704ba393f7" alt="Film">
+    <nav> 
+        <h1 class="main"><a href="index.html">CineFix</a></h1>
+        <img src="./images/icon.jpg" alt="Icon image">
+        <h1><a href="./user.html">USER</a></h1>
+        <h1><a href="./films.html">FILMS</a></h1>
+        <h1><a href="./log.html">LOG</a></h1>
+    </nav>
+    <div id="side-borders">
+        <main>
+            <!-- Introduction -->
+             <section id="introduction">
+                <h1>Welcome back, <a href="user.html">dokjqk</a>. Here's what your friends have been watching...</h1>
+             </section>
 
-                </div>
-                <div class="persection">
-                    <img src="https://a.ltrbxd.com/resized/film-poster/5/1/9/2/1/51921-spirited-away-0-230-0-345-crop.jpg?v=a3ad463c55" alt="Film">
-                </div>
-            </div>
-        </section>
-        <section>
-            <h3>LATEST REVIEW FROM FRIENDS</h3>
-            <hr>
-            <div class="film">
-                <div class="persection">
-                    <img src="https://a.ltrbxd.com/resized/sm/upload/rj/yc/zl/ex/g8IQhqYYLERU0UxjVaySP46PFEZ-0-230-0-345-crop.jpg?v=d867145245" alt="Film">
-                </div>
-                <div class="review">
-                    <div class="review-header">
-                        <div class="circle"></div>
-                        <h3>@magicalwizard5</h3>
+            <!-- New from friends -->
+            <section>
+                <h2>NEW FROM FRIENDS</h2>
+                <hr>
+                <div id="new-friends">
+                    <div id="review-bar">
+                        <a href=""><img src="./images/venom-the-last-dance.jpg" alt="Vemon The Last Dance"></a>
+                        <div id="bar-text">
+                            <h3>@kyomo_to</h3>
+                            <h3 class="stars">★★★</h3>
+                        </div>
                     </div>
-                    <h4>Harry Potter and the Chamber of Secrets</h4>
-                    <h5>2002</h5>
-                    <h4>3/5</h4>
-                </div>
-                <div class="persection">
-                    <img src="https://a.ltrbxd.com/resized/film-poster/4/9/0/6/2/49062-howl-s-moving-castle-0-230-0-345-crop.jpg?v=fde81bda52" alt="Film">
-                </div>
-                <div class="review">
-                    <div class="review-header">
-                        <div class="circle"></div>
-                        <h3>@kat</h3>
+                    <div id="review-bar">
+                        <a href="./films/howls-moving-castle.html"><img src="./images/howl-s-moving-castle.jpg" alt="Howl's Moving Castle"></a>
+                        <div id="bar-text">
+                            <h3>@fuji_no</h3>
+                            <h3 class="stars">★★★★</h3>
+                        </div>
                     </div>
-                    <h4>Howl's Moving Castle</h4>
-                    <h5>2004</h5>
-                    <h4>4/5</h4>
+                    <div id="review-bar">
+                        <a href=""><img src="./images/dune-part-two.jpg" alt="Dune Part Two"></a>
+                        <div id="bar-text">
+                            <h3>@magicalwizard5</h3>
+                            <h3 class="stars">★★★★★</h3>
+                            </div>
+                    </div>
+                    <div id="review-bar">
+                        <a href=""><img src="./images/the-truman-show.jpg" alt="The Truman Show"></a>
+                        <div id="bar-text">
+                            <h3>@reibu</h3>
+                            <h3 class="stars">★★★★</h3>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="paragraph-container">
-                <p>
-                    Continuing my rewatch of the series, the second entry felt very similar to the first, almost copying it beat for beat. Some of the scenes were unnecessary, which made it a drag to watch.
-                    Fortunately, there were aspects in which The Chamber of Secrets improved over its predecessor. The camerawork was a lot more dynamic, as well as the use of music and sound design. The plot was more developed and the final showdown was pretty memorable.
-                    I would have appreciated these improvements more, if I hadn’t have watched it immediately after The Philosopher’s Stone. Ultimately, I was struggling to pay attention for large parts of the film and really felt the runtime.
-                </p>
-                <p>
-                    Scattered with a few of the greatest pastures in the cinema. Such overwhelming beauty.
-                    Cried basically nonstop during the final act, 
-                    which is just as narratively nonsensical as its reputation, 
-                    but it nonetheless carries the burden of a heavy heart with grace and whimsy.
-                </p>
-            </div>
-        </section>
-    </main>
+            </section>
+
+            <!-- Popular with friends right now -->
+            <section>
+                <h2 style="margin-top: 50px;">POPULAR WITH FRIENDS</h2>
+                <hr>
+                <div id="popular-friends-images">
+                    <img src="./images/howl-s-moving-castle.jpg" alt="Howl's Moving Castle">
+                    <img src="./images/dune-part-two.jpg" alt="Dune Part Two">
+                    <img src="./images/venom-the-last-dance.jpg" alt="Vemon The Last Dance">
+                    <img src="./images/the-truman-show.jpg" alt="The Truman Show">
+                    <img src="./images/parasite.jpg" alt="Parasite">
+                </div>
+            </section>
+
+            <!-- Latest reviews from friends -->
+            <section>
+                <h2 style="margin-top: 50px;">LATEST REVIEWS FROM FRIENDS</h2>
+                <hr>
+                <div id="recent-reviews">
+                    <img src="./images/venom-the-last-dance.jpg" alt="Vemon The Last Dance">
+                    <div>
+                        <div id="review-username">
+                            <img src="./images/kyomoto-icon.jpg" alt="kyomoto-icon" style=" height: 80px;">
+                            <h2>@kyomo_to</h2>
+                        </div>
+                        <h3>Venom: The Last Dance</h3>
+                        <h2>2024</h2>
+                        <h3 class="stars">★★★</h3>
+                    </div>
+                    <img src="./images/howl-s-moving-castle.jpg" alt="Howl's Moving Castle">
+                    <div>
+                        <div id="review-username">
+                            <img src="./images/fujino-icon.jpg" alt="fujino-icon" style=" height: 80px;">
+                            <h2>@fuji_no</h2>
+                        </div>
+                        <h3>Howl's Moving Castle</h3>
+                        <h2>2004</h2>
+                        <h3 class="stars">★★★★</h3>
+                    </div>
+                </div>
+                <div id="reviews">
+                    <div>
+                        <p>As a long-time fan of the Venom series, 
+                            I was eagerly anticipating the release of the third instalment, 
+                            and it did not disappoint! "Venom: The Last Dance" is a fantastic mix of action, comedy, 
+                            and some surprising twists that keep you on the edge of your seat.</p>
+                        <p>Venom: The Last Dance" is a thrilling cinematic experience 
+                            that dive into the complex relationship between Eddie Brock and his symbiotic counterpart, Venom. 
+                            This film takes viewers on an exhilarating ride, 
+                            showcasing not only spectacular visual effects but also a compelling storyline that keeps audiences engaged from start to finish.</p>
+                    </div>
+                    <div>
+                        <p>As a devoted fan of Studio Ghibli's enchanting creations, 
+                            This movie is a mesmerizing masterpiece that effortlessly earns a perfect five-star rating. 
+                            From its captivating world-building to its intricate character designs and heartwarming storyline, 
+                            every aspect of this film is a testament to the brilliance of Hayao Miyazaki and his team.</p>
+                        <p>The world-building in "Howl's Moving Castle" is nothing short of breathtaking. 
+                            The whimsical landscapes, magical creatures, and intricate steampunk-inspired machinery create a rich and immersive universe that invites viewers to lose themselves in its wonders. 
+                            Whether it's the bustling city streets or the serene countryside, each setting feels meticulously crafted and brimming with life.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div id="blank-space"></div>
     <footer>
-        <br>
-        <br>
-        <br>
+        <h1 class="main">CineFix</h1>
+        <h2><a href="user.html">USER</a></h2>
+        <h2><a href="">FILMS</a></h2>
+        <h2><a href="">FRIENDS</a></h2>
+        <h2><a href="">LOG</a></h2>
     </footer>
 </body>
 </html>
