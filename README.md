@@ -8,7 +8,3 @@ I created a movie review website.
 -	Discover new movies and TV shows to watch. 
 -	Read reviews and ratings from other users. 
 •	Find information about specific movies or TV shows, such as cast, crew, plot summaries, and trailers
-
-## Features
-- Implementation of [briefly describe the main functionality of the project].
-- [List any other features or highlights].
