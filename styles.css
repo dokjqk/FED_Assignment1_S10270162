@@ -10,6 +10,7 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+    font-size: 2vw;
 }
 
 h2 {
@@ -18,7 +19,7 @@ h2 {
     font-weight: 300;
     font-style: normal;
     margin-bottom: 0;
-    font-size: 1em;
+    font-size: 1.2vw;
 
 }
 
@@ -28,7 +29,7 @@ h3 {
     font-weight: 700;
     font-style: normal;
     margin-bottom: 0;
-    font-size: 1em;
+    font-size: 1.2vw;
 }
 
 /* Navigation */
@@ -40,7 +41,7 @@ nav {
     display: flex;
     justify-content: space-around;
     flex-grow: 1;
-    font-size: 1.2em;
+    font-size: 1.2vw;
     padding-left: 12%;
     padding-right: 12%;
 }
@@ -66,7 +67,18 @@ nav button{
 #side-borders {
     padding-left: 12%;
     padding-right: 12%;
-    color: #cccccc;
+}
+
+@media screen and (max-width: 768px) {
+    #side-borders {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    nav {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
 }
 
 #introduction {
@@ -74,7 +86,7 @@ nav button{
     font-weight: 700;
     font-style: normal;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.2vw;
     padding: 20px;
     padding-top: 30px;
 }
@@ -95,8 +107,7 @@ a:visited {
 
 #review-bar {
     img {
-        height: 400px;
-        width: 266px;
+        height: 28vw;
     }
     display: flex;
     flex-direction: column;
@@ -107,6 +118,8 @@ a:visited {
     border-width: thin;
     border-radius: 2px;
 }
+
+
 
 #review-bar h3 {
     margin-top:0px;
@@ -124,7 +137,7 @@ a:visited {
 
 #popular-friends-images{
     display: flex;
-    height: 320px;
+    height: 22vw;
     justify-content: space-around;
     flex-grow: 1;
 }
@@ -136,40 +149,35 @@ a:visited {
     align-items: center;
 }
 #review-username img{
-    height: 80px;
+    height: 8vw !important;
     border-radius: 50%;
 }
 
 #recent-reviews {
     display: flex;
-    justify-content: space-between;
+    gap: 2vw;
     h3 {
-        font-size: 1.4em;
+        font-size: 1.4vw;
         margin-top: 10px;
     }
     h2{
-        margin-top: 10px;
-        font-size: 1.2em;
+        margin-top: 1.3px;
+        font-size: 1.4vw;
 
     }
 }
 
 #recent-reviews img {
-    height: 400px;
+    height: 28vw;
 }
 
-#reviews{
-    gap: 20px;
-    display: flex;
-    p {
-        font-family: "Alata", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        text-align: left;
-        font-size: 1.2em;
-        padding-top: 0;
-        width: 560px;
-    }
+p {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 1.3vw;
+    padding-top: 0;
 }
 
 /* Footer */
@@ -179,7 +187,7 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-grow: 1;
-    font-size: 1.2em;
+    font-size: 1.2vw;
     padding-left: 12%;
     padding-right: 12%;
     a{
@@ -206,6 +214,10 @@ footer button{
     padding: 100px;
 }
 
+#reviews-home{
+    display: flex;
+    gap: 1vw;
+}
 
 /* User-site */
 #profile-borders {
@@ -213,56 +225,51 @@ footer button{
     justify-content: center;
     align-items: center;
     padding-top: 20px;
-    gap: 15px; /* Adds spacing between profile sections */
-    font-size: 1.2em;
+    gap: 2vw; /* Adds spacing between profile sections */
+    font-size: 1.2vw;
 }
 
 #profile-name {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 400px;
-    gap: 20px;
+    padding-right: 26vw;
+    gap: 1vw;
 }
 
 #profile-name img {
-    max-width: 150px; /* Adjust size of the icon */
+    max-width: 10vw; /* Adjust size of the icon */
     border-radius: 50%;
-    margin-right: 10px; /* Space between icon and name */
+    margin-right: 1vw; /* Space between icon and name */
 }
 
 #profile-name h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 2.4vw;
 }
 
 .profile-icons {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.2em;
 }
 
 .profile-icons h3 {
     margin: 0;
-    font-size: 1.6em; /* Larger font for the number */
+    font-size: 2vw; /* Larger font for the number */
 }
 
 .profile-icons h2 {
     margin: 0;
-    font-size: 1em; /* Smaller font for the label */
+    font-size: 1.4vw; /* Smaller font for the label */
 }
 
-.profile-icons img {
-    max-width: 40px; /* Adjust size of the icon (if used) */
-    max-height: 40px;
-    border-radius: 50%;
-}
+
 #recent-reviews-movie-name {
     display: flex;
     align-items: center;
     h3, h2{
-        font-size: 1.5em;
+        font-size: 1.5vw;
         margin: 5px;
     }
 
@@ -279,25 +286,25 @@ footer button{
 #recent-reviews-user {
     display: flex;
     img {
-        height: 200px;
+        height: 18vw;
         border-radius: 1.5%;
         border-style: solid;
         border-width: 1px;
         color: #435d7c;
     }
-    gap: 20px;  
+    gap: 2vw;  
 }
 ul {
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
 }
 li {
     display: flex;
-    gap: 20px;
+    gap: 1vw;
     h3{
         border-style: solid;
-        padding: 10px;
+        padding: 1.5vw;
         border-radius: 10%;
         border-width: 1px;
     }
@@ -305,31 +312,31 @@ li {
 
 #recent-reviews-user-section {
     display: flex;
-    justify-content: space-between; /* This ensures the items are spaced evenly with space between */
-    width: 100%; /* Ensure the flex container takes up the full width of its parent */
-    gap: 20px;
+    justify-content: space-between; 
+    width: 100%; 
+    gap: 1vw;
 }
-.item-80 {
-    width: 80%; /* Takes 80% of the space */
+item-80 {
+    width: 80%; 
 }
 
 .item-20 {
-    width: 20%; /* Takes 20% of the space */
+    width: 20%; 
 }
 
 /* Films page */
 #news-text-header {
     h3{
-        font-size: 2em;
+        font-size: 2.5vw;
     }
     h2{
-        font-size: 1em;
+        font-size: 1.1vw;
     }
     span {
         font-weight: 700;
     }
     background-color: #1f2d3b;
-    height: 200px;
+    height: 14vw;
     padding-left: 30px;
     padding-right: 30px;
     align-items: center;
@@ -337,23 +344,23 @@ li {
 
 #news-header {
     img {
-        height: 200px;
+        height: 14vw;
     }
     display: flex;
 }
 #other-news-items {
     img {
-        max-height: 200px;
+        max-height: 14vw;
         width: auto;
         border-radius: 2px;
     }
     h3{
-        font-size: 1.2em;
+        font-size: 1.3vw;
         margin-top: 0;
         padding-top: 10px;
     }
     h2{
-        font-size: 1.1em;
+        font-size: 1.1vw;
         margin-top: 0;
         padding-top: 10px;
     }
@@ -364,7 +371,7 @@ li {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start; /* Aligns items at the top */
-    gap: 10px;
+    gap: 0.4vw;
 }
 
 /* Individual film page */
@@ -376,7 +383,8 @@ li {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 65%);    
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 65%);   
+    width: 70%; 
 
 }
 .image-container{
@@ -392,19 +400,24 @@ li {
 
 #film-info {
     img {
-        height: 350px
+        height: 25vw;
 
     }
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
     h3{
-        font-size: 1.2em;
+        font-size: 1.4vw;
     }
     h2{
-        font-size: 1.2em;
+        font-size: 1.35vw;
     }
 
+#film-texts{
+    h3{
+        font-size: 3vw;
+    }
+}
 }
 #watch-icon {
     display: flex;
@@ -416,6 +429,9 @@ li {
         margin: 0;
     }
 }
+#icon-watch {
+    height: 3vw !important;
+}
 
 #where-to-watch {
     border-style: solid;
@@ -423,17 +439,36 @@ li {
 
 #videos {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    width: calc(50% - 10px); /* Fixed width for two videos per row */
+    max-width: 100%;
+    background: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 .stars {
 
     color:  #ddedff;
 }
 
 #movie-user-icon img {
-    height: 100px;
-    width: 100px;
+    height: 8vw !important;
+    width: 8vw !important;
     border-radius: 50%;
 }
 
@@ -441,19 +476,20 @@ li {
     display: flex;
     gap: 10px;
     img {
-        height: 50px;
-        width: 50px;
+        height: 3vw;
+        width: 3vw;
         border-radius: 50%;
         border-style: solid;
         border-width: 1px;
     }
 }
 .item-20-movie {
-    width: 20%; /* Takes 20% of the space */
     display: flex;
     justify-content: space-evenly;
-    border-style: solid;
+    border: none; /* Remove the border */
+
 }
+
 
 #flex {
     display: flex;
@@ -475,4 +511,363 @@ img:hover {
     flex-direction: column;
    align-items: center;
 
+}
+
+input[type="date"] {
+    background-color: #273649;
+    color: white;
+    border: 1px solid #435d7c;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2vw;
+    font-family: "Albert Sans", sans-serif;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+input[type="text"] {
+    background-color: #273649;
+    color: white;
+    border: 1px solid #435d7c;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2vw;
+    font-family: "Albert Sans", sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea.review-textbox {
+    background-color: #273649;
+    color: white;
+    border: 1px solid #435d7c;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2vw;
+    font-family: "Albert Sans", sans-serif;
+    width: 54vw;
+    height: 400px; /* Increased height */
+    box-sizing: border-box;
+    resize: vertical; 
+}
+
+.submit-button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2vw;
+    font-family: "Albert Sans", sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-button:hover {
+    background-color: #34495e;
+}
+
+.submit-button:active {
+    transform: scale(0.98);
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3.5vw;
+    }
+    h2{
+        font-size: 1.5vw;
+    }
+    h3{
+        font-size: 1.5vw;
+    }
+    #review-bar {
+        img {
+            height: 34vw;
+        }
+    }
+    #popular-friends-images{
+        height: 28vw;
+    }
+    #review-username{ 
+        img{
+            height: 9vw !important;
+        }
+        h2{
+            font-size: 2vw;
+        }
+    }
+    #texts{
+        h3{
+            font-size: 2vw;
+        }
+        h2{
+            font-size: 2vw;
+        }
+    }
+    p{
+        font-size: 2vw;
+    }
+
+    
+}
+
+@media screen and (max-width: 435px) {
+    nav{
+        img {
+            visibility: hidden;
+        }
+    }
+    h1 {
+        font-size: 5vw;
+    }
+    h2{
+        font-size: 3vw;
+    }
+    h3{
+        font-size: 3vw;
+    }
+    #new-friends {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    #review-bar {
+        flex: 1 1 calc(50% - 20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom:5px;
+        img{
+            height: 70vw
+        }
+        gap: 10px;
+    }
+    #bar-text{
+        justify-content:space-around
+    }
+    #popular-friends-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: auto;
+    }
+    
+    #popular-friends-images img {
+        width: 45%;
+        margin-bottom: 10px;
+    }
+    
+    #popular-friends-images img:nth-child(5) {
+        width: 95%;
+    }
+    #reviews-home{
+        display: block;
+        img{
+            height: 70vw;   
+        }
+        h3{
+            font-size: 4vw;
+        }
+        h2 {
+            font-size: 4vw;
+        }
+        p{
+            font-size: 4vw;
+        }
+    }
+    #review-username img{
+        height: 15vw !important;
+    }
+    #profile-name{
+        h1{
+            font-size: 6vw;
+        }
+        img{
+            max-width: 20vw;
+        }
+        padding-right: 2vw;
+
+    }
+    .profile-icons{
+        h3 {
+            font-size: 5vw !important;
+        }
+        h2{
+            font-size: 3vw !important;
+        }
+    }
+    .item-80{
+        width: 100%;
+    }
+    .item-20{
+        display: none;
+    }
+
+    #recent-reviews-user img{
+        height: 30vw;
+    }
+    #recent-reviews-movie-name{
+        h3{
+            font-size: 4vw;
+        }
+        h2{
+            font-size: 4vw;
+        }
+    }
+    #blank-space{
+        padding: 50px;
+    }
+    #news-text-header{
+        h3{
+            font-size: 3.2vw;
+        }
+        h2{
+            font-size: 1.7vw;
+        }
+        height: 25vw;
+    }
+    #news-header {
+        img {
+            height: 25vw;
+        }
+    }
+    #other-news {
+        display: flex;
+        img{
+            flex-wrap: wrap;
+            max-width: 60vw;   
+        }
+        h3{
+            font-size: 2.5vw;
+        }
+        h2{
+            font-size: 2.5vw;
+        }
+    }
+    #header-image{
+        width: 100%;
+    }
+    #film-texts{
+        h3{
+            font-size: 4vw !important;
+        }
+        h2{
+            font-size: 2.3vw;
+        }
+    }
+    #movie-user-icon img{
+        height:15vw !important;
+        width: 15vw !important;
+    }
+
+    #film-metadata{
+        display: none;
+    }
+    #film-info{
+        img{
+            height: 40vw;
+        }
+        h3{
+            font-size: 3vw;
+        }
+        h2{
+            font-size: 2.5vw;
+        }
+    }   
+    #activities {
+        img{
+            height: 8vw;
+            width: 8vw;
+        }
+    }
+    #icon-watch{
+        height: 6vw !important;
+
+    }
+    #film-info{
+        h2{
+            font-size: 3vw !important;
+        }
+    }
+}
+
+#log-html{
+    padding-top: 50px;
+    h1{
+        font-size: 3vw;
+        padding: 0;
+        margin: 0;
+    }
+    h2{
+        font-size: 2vw;
+    }
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-top: 10px;
+}
+.rating{
+    border: none;
+    float: left;
+    padding-left: 0;
+    margin: 0;
+}
+
+.rating > input{
+    display: none;
+}
+
+.rating > label:before {
+    content: '\f005';
+    font-family: 'FontAwesome';
+    margin: 5px;
+    font-size: 1.2rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.rating > .half:before{
+    content: '\f089';
+    position: absolute;
+    cursor: pointer;
+}
+
+.rating > label {
+    color: #ddd;
+    float: right;
+    cursor: pointer;
+}
+
+.rating >input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label{
+    color: #2ce679;
+}
+
+.rating >input:checked + label:hover,
+.rating >input:checked ~ label:hover,
+.rating >label:hover ~ input:checked ~ label,
+.rating >input:checked ~ label:hover ~ label{
+    color: #2ddc76;
+}
+
+button.pressed {
+  transform: scale(0.95);
+  background-color: #ccc; /* Change to a lighter color to indicate press */
+}
+
+#reviews-log {
+    display: flex;
+    gap: 5vw;
+}
+
+#review-side {
+    flex-grow: 1;
 }

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/5593393212.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav> 
@@ -18,9 +18,41 @@
         <h1><a href="./films.html">FILMS</a></h1>
         <h1><a href="./log.html">LOG</a></h1>
     </nav>
-    <div id="log-html">
-        <h2>ADD TO YOUR FILMS...</h2>
-        <h2>Name of Film</h2>
+    <div id="side-borders">
+        <h3 style="font-size: 2vw;">Back</h3>
+        <div id="reviews-log">
+            <div id="log-image">
+                <img src="" alt="Movie Image" style="height: 350px;">
+                <h2>Rating</h2>
+                <div class="container">
+                    <fieldset class="rating">
+                        <input type="radio" id="star5" name="rating" value="5"/><label for="star5" class="full"></label>
+                        <input type="radio" id="star4" name="rating" value="4"/><label for="star4" class="full"></label>
+                        <input type="radio" id="star3" name="rating" value="3"/><label for="star3" class="full"></label>
+                        <input type="radio" id="star2" name="rating" value="2"/><label for="star2" class="full"></label>
+                        <input type="radio" id="star1" name="rating" value="1"/><label for="star1" class="full"></label>
+                    </fieldset>
+                </div>
+                <button class="submit-button">Submit</button>
+            </div>
+            <div id="review-side">
+                <h3 style="font-size: 2vw; margin: 0;">I watched...</h3>
+                <h3 style="font-size: 2vw; margin: 2px;"></h3>
+                <input type="date">
+                <textarea class="review-textbox" placeholder="Enter your review"></textarea>
+            </div>
+        </div>
+ 
     </div>
-    
+    <div id="blank-space"></div>
+
+    <footer>
+        <h1 class="main">CineFix</h1>
+        <h2><a href="user.html">USER</a></h2>
+        <h2><a href="">FILMS</a></h2>
+        <h2><a href="">FRIENDS</a></h2>
+        <h2><a href="">LOG</a></h2>
+    </footer>
+    <script src="logScript.js"></script>
 </body>
+</html>
