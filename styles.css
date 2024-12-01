@@ -7,7 +7,6 @@ body {
 /* Set font sizes */
     h1 {
         font-family: "Alata", sans-serif;
-        font-optical-sizing: auto;
         font-weight: 700;
         font-style: normal;
         font-size: 2vw;
@@ -15,7 +14,6 @@ body {
 
     h2 {
         font-family: "Albert Sans", sans-serif;
-        font-optical-sizing: auto;
         font-weight: 300;
         font-style: normal;
         margin-bottom: 0;
@@ -25,7 +23,6 @@ body {
 
     h3 {
         font-family: "Albert Sans", sans-serif;
-        font-optical-sizing: auto;
         font-weight: 700;
         font-style: normal;
         margin-bottom: 0;
@@ -104,11 +101,11 @@ a:visited {
     justify-content: space-around;
 }
 
+#review-bar img{
+    height: 28vw;
 
+}
 #review-bar {
-    img {
-        height: 28vw;
-    }
     display: flex;
     flex-direction: column;
     justify-content:left;
@@ -156,15 +153,15 @@ a:visited {
 #recent-reviews {
     display: flex;
     gap: 2vw;
-    h3 {
-        font-size: 1.4vw;
-        margin-top: 10px;
-    }
-    h2{
-        margin-top: 1.3px;
-        font-size: 1.4vw;
+}
 
-    }
+#recent-reviews h3{
+    font-size: 1.4vw;
+    margin-top: 10px;
+}
+#recent-reviews h2{
+    margin-top: 1.3px;
+    font-size: 1.4vw;
 }
 
 #recent-reviews img {
@@ -190,10 +187,11 @@ footer {
     font-size: 0.8vw;
     padding-left: 12%;
     padding-right: 12%;
-    a{
-        text-decoration: none;
-    }
+
     padding-bottom: 20px;
+}
+footer a{
+    text-decoration: none;
 }
 
 footer .main { 
@@ -269,69 +267,71 @@ footer button{
 #recent-reviews-movie-name {
     display: flex;
     align-items: center;
-    h3, h2{
-        font-size: 1.5vw;
-        margin: 5px;
-    }
 
+
+}
+
+#recent-reviews-movie-name h3, h2 {
+    font-size: 1.2vw;
+    margin: 5px;
+    
 }
 #recent-reviews-rating {
     display: flex;
-
     align-items: center;
-    h3, h2{
-        margin: 5px;
-    }
+}
+
+#recent-reviews-rating h3, h2 {
+    margin: 5px;
 
 }
 #recent-reviews-user {
     display: flex;
-    img {
-        height: 18vw;
-        border-radius: 1.5%;
-        border-style: solid;
-        border-width: 1px;
-        color: #435d7c;
-    }
+
     gap: 2vw;  
+}
+#recent-reviews-user img {
+    height: 18vw;
+    border-radius: 1.5%;
+    border-style: solid;
+    border-width: 1px;
+    color: #435d7c;
 }
 
 #recent-reviews-user-one {
     display: flex;
-    img {
-        height: 18vw;
-        border-radius: 1.5%;
-        border-style: solid;
-        border-width: 1px;
-        color: #435d7c;
-    }
     gap: 2vw;  
+}
+#recent-reviews-user-one img {
+    height: 18vw;
+    border-radius: 1.5%;
+    border-style: solid;
+    border-width: 1px;
+    color: #435d7c;
 }
 
 #recent-reviews-user-two {
     display: flex;
-    img {
-        height: 18vw;
-        border-radius: 1.5%;
-        border-style: solid;
-        border-width: 1px;
-        color: #435d7c;
-    }
     gap: 2vw;  
 }
-
+#recent-reviews-user-two img {
+    height: 18vw;
+    border-radius: 1.5%;
+    border-style: solid;
+    border-width: 1px;
+    color: #435d7c;
+}
 #recent-reviews-user-three {
     display: flex;
-    img {
-        height: 18vw;
-        border-radius: 1.5%;
-        border-style: solid;
-        border-width: 1px;
-        color: #435d7c;
-    }
     gap: 2vw;  
 }
-
+#recent-reviews-user-three img {
+    height: 18vw;
+    border-radius: 1.5%;
+    border-style: solid;
+    border-width: 1px;
+    color: #435d7c;
+}
 
 ul {
     list-style-type: none; 
@@ -341,12 +341,13 @@ ul {
 li {
     display: flex;
     gap: 1vw;
-    h3{
-        border-style: solid;
-        padding: 1.5vw;
-        border-radius: 10%;
-        border-width: 1px;
-    }
+}
+
+li h3{
+    border-style: solid;
+    padding: 1.5vw;
+    border-radius: 10%;
+    border-width: 1px;
 }
 
 #recent-reviews-user-section {
@@ -371,46 +372,48 @@ li {
 
 /* Films page */
 #news-text-header {
-    h3{
-        font-size: 2.5vw;
-    }
-    h2{
-        font-size: 1.1vw;
-    }
-    span {
-        font-weight: 700;
-    }
+
     background-color: #1f2d3b;
     height: 14vw;
     padding-left: 30px;
     padding-right: 30px;
     align-items: center;
 }
+#news-text-header h3{
+    font-size: 2.5vw;
+}
+#news-text-header h2{
+    font-size: 1.1vw;
+}
+#news-text-header span{
+    font-weight: 700;
+}
 
 #news-header {
-    img {
-        height: 14vw;
-    }
     display: flex;
 }
+#news-header img{
+    height: 14vw;
+
+}
 #other-news-items {
-    img {
-        max-height: 14vw;
-        width: auto;
-        border-radius: 2px;
-    }
-    h3{
-        font-size: 1.3vw;
-        margin-top: 0;
-        padding-top: 10px;
-    }
-    h2{
-        font-size: 1.1vw;
-        margin-top: 0;
-        padding-top: 10px;
-    }
     display: flex; 
     flex-direction: column; 
+}
+#other-news-items img {
+    max-height: 14vw;
+    width: auto;
+    border-radius: 2px;
+}
+#other-news-items h3{
+    font-size: 1.3vw;
+    margin-top: 0;
+    padding-top: 10px;
+}
+#other-news-items h2{
+    font-size: 1.1vw;
+    margin-top: 0;
+    padding-top: 10px;
 }
 #other-news {
     display: flex;
@@ -444,25 +447,24 @@ li {
 }
 
 #film-info {
-    img {
-        height: 25vw;
-
-    }
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
-    h3{
-        font-size: 1.4vw;
-    }
-    h2{
-        font-size: 1.35vw;
-    }
-
-#film-texts{
-    h3{
-        font-size: 3vw;
-    }
 }
+#film-info h2{
+    font-size: 1.35vw;
+}
+#film-info h3{
+    font-size: 1.4vw;
+}
+#film-info img {
+    height: 25vw;
+
+}
+#film-texts h3{
+    
+    font-size: 3vw;
+
 }
 #watch-icon {
     display: flex;
@@ -470,9 +472,10 @@ li {
     padding: 0;
     gap: 20px;
     align-items: center;
-    h2 {
-        margin: 0;
-    }
+
+}
+#watch-icon h2 {
+    margin: 0;
 }
 #icon-watch {
     height: 3vw !important;
@@ -507,7 +510,6 @@ li {
     border: 0;
 }
 .stars {
-
     color:  #ddedff;
 }
 
@@ -520,13 +522,13 @@ li {
 #activities{
     display: flex;
     gap: 10px;
-    img {
-        height: 3vw;
-        width: 3vw;
-        border-radius: 50%;
-        border-style: solid;
-        border-width: 1px;
-    }
+}
+#activities img {
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
 }
 .item-20-movie {
     display: flex;
@@ -628,29 +630,29 @@ textarea.review-textbox {
     h3{
         font-size: 1.5vw;
     }
-    #review-bar {
-        img {
-            height: 34vw;
-        }
+    #review-bar img {
+
+        height: 34vw;
+
     }
     #popular-friends-images{
         height: 28vw;
     }
-    #review-username{ 
-        img{
-            height: 9vw !important;
-        }
-        h2{
-            font-size: 2vw;
-        }
+    #review-username h2{ 
+
+ 
+        font-size: 2vw;
+
     }
-    #texts{
-        h3{
-            font-size: 2vw;
-        }
-        h2{
-            font-size: 2vw;
-        }
+    #review-username img{
+        height: 9vw !important;
+    }
+
+    #texts h3{
+        font-size: 2vw;
+    }
+    #texts h2{
+        font-size: 2vw;
     }
     p{
         font-size: 2vw;
@@ -660,10 +662,9 @@ textarea.review-textbox {
 }
 
 @media screen and (max-width: 435px) {
-    nav{
-        img {
-            visibility: hidden;
-        }
+
+    nav img{
+        visibility: hidden;
     }
     h1 {
         font-size: 5vw;
@@ -686,11 +687,11 @@ textarea.review-textbox {
         flex-direction: column;
         align-items: center;
         margin-bottom:5px;
-        img{
-            height: 70vw
-        }
         gap: 10px;
     }
+    #review-bar img {
+        height: 70vw
+    }    
     #bar-text{
         justify-content:space-around
     }
@@ -711,39 +712,39 @@ textarea.review-textbox {
     }
     #reviews-home{
         display: block;
-        img{
-            height: 70vw;   
-        }
-        h3{
-            font-size: 4vw;
-        }
-        h2 {
-            font-size: 4vw;
-        }
-        p{
-            font-size: 4vw;
-        }
+
+    }
+    #reviews-home h3{
+        font-size: 4vw;
+    }
+    #reviews-home h2{
+        font-size: 4vw;
+    }
+    #reviews-home p{
+        font-size: 4vw;
+    }
+
+
+    #review-home img{
+        height: 70vw;   
     }
     #review-username img{
         height: 15vw !important;
     }
     #profile-name{
-        h1{
-            font-size: 6vw;
-        }
-        img{
-            max-width: 20vw;
-        }
         padding-right: 2vw;
-
     }
-    .profile-icons{
-        h3 {
-            font-size: 5vw !important;
-        }
-        h2{
-            font-size: 3vw !important;
-        }
+    #profile-name h1{
+        font-size: 5vw;
+    }
+    #profile-name img{
+        max-width: 20vw;
+    }
+    .profile-icons h2{
+        font-size: 3vw !important;
+    }
+    .profile-icons h3 {
+        font-size: 5vw !important;
     }
     .item-80{
         width: 100%;
@@ -751,58 +752,61 @@ textarea.review-textbox {
     .item-20{
         display: none;
     }
+    .item-80-user{
+        width: 100%;
+    }
+    .item-20-user{
+        display: none;
+    }
 
-    #recent-reviews-user img{
+    #recent-reviews img{
         height: 30vw;
     }
-    #recent-reviews-movie-name{
-        h3{
-            font-size: 4vw;
-        }
-        h2{
-            font-size: 4vw;
-        }
+    #recent-reviews-movie-name h2{
+        font-size: 4vw;
+    }
+    #recent-reviews-movie-name  h3{
+        font-size: 4vw;
     }
     #blank-space{
         padding: 50px;
     }
     #news-text-header{
-        h3{
-            font-size: 3.2vw;
-        }
-        h2{
-            font-size: 1.7vw;
-        }
+ 
+
         height: 25vw;
     }
-    #news-header {
-        img {
-            height: 25vw;
-        }
+    #news-text-header h3{
+        font-size: 3vw;
+    }
+    #news-text-header h2{
+        font-size: 1.5vw;
+    }
+    #news-header img {
+        height: 25vw;
     }
     #other-news {
         display: flex;
-        img{
-            flex-wrap: wrap;
-            max-width: 60vw;   
-        }
-        h3{
-            font-size: 2.5vw;
-        }
-        h2{
-            font-size: 2.5vw;
-        }
     }
+    #other-news h2{
+        font-size: 2.5vw;
+    }
+    #other-news h3{
+        font-size: 2.5vw;
+    }
+    #other-news-items img{
+        flex-wrap: wrap;
+        max-width: 60vw;   
+    }   
     #header-image{
         width: 100%;
     }
-    #film-texts{
-        h3{
-            font-size: 4vw !important;
-        }
-        h2{
-            font-size: 2.3vw;
-        }
+    #film-texts h2{
+        font-size: 2.3vw;
+    }
+
+    #film-texts h3{
+        font-size: 4vw !important;
     }
     #movie-user-icon img{
         height:15vw !important;
@@ -812,44 +816,37 @@ textarea.review-textbox {
     #film-metadata{
         display: none;
     }
+    #film-info h2{
+        font-size: 3vw;
+    }  
+    #film-info img{
+        height: 40vw;
+    }
+
     #film-info{
-        img{
-            height: 40vw;
-        }
-        h3{
-            font-size: 3vw;
-        }
-        h2{
-            font-size: 2.5vw;
-        }
-    }   
-    #activities {
-        img{
-            height: 8vw;
-            width: 8vw;
-        }
+        font-size: 3vw;
+
+    }
+    #activities img{
+        height: 8vw;
+        width: 8vw;
     }
     #icon-watch{
         height: 6vw !important;
 
     }
-    #film-info{
-        h2{
-            font-size: 3vw !important;
-        }
-    }
 }
 
 #log-html{
     padding-top: 50px;
-    h1{
-        font-size: 3vw;
-        padding: 0;
-        margin: 0;
-    }
-    h2{
-        font-size: 2vw;
-    }
+}
+#log-html h2{
+    font-size: 2vw;
+}
+#log-html h1{
+    font-size: 3vw;
+    padding: 0;
+    margin: 0;
 }
 
 .container{
@@ -964,7 +961,7 @@ button.pressed {
     float: left;
     background-color: #2196F3;
     color: #ffffff;
-    height: 250px;
+    height: 20vw;
     line-height: 100px;
     text-align: center;
     margin: 2px;
@@ -978,7 +975,7 @@ button.pressed {
   .btn {
     border: none;
     outline: none;
-    padding: 12px 16px;
+    padding: 1vw 1vw;
     background-color: #3b526f;
     cursor: pointer;
     border-radius: 4px;
@@ -998,11 +995,3 @@ button.pressed {
     background-color: #131a23;
     color: white;
   }
-
-#header-news{
-    align-content: center;
-    text-align: center;
-    img{
-        height: 40vw;
-    }
-}
