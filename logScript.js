@@ -26,7 +26,8 @@ let starSymbols = {
 
 let submitButton = document.querySelector('button');
 
-submitButton.addEventListener('click', function() {
+submitButton.addEventListener('click', function(event) {
+  event.preventDefault();
   // Add 'pressed' class to the button
   submitButton.classList.add('pressed');
   
@@ -89,7 +90,7 @@ let dictionary = {
   'Parasite': 'parasite.jpg',
   'Drive My Car': 'drive-my-car.jpg',
   'Elevation': 'elevation.jpg',
-  'Gladiator': 'gladiator.jpg',
+  'Gladiator 2': 'gladiator.jpg',
   'Moana 2': 'moana-2.jpg',
   'The Grand Budapest Hotel': 'the-grand-budapest-hotel.jpg',
   'Mufasa': 'mufasa.jpg',

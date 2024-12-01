@@ -21,7 +21,7 @@ let availableKeywords = [
     'Parasite',
     'Drive My Car',
     'Elevation',
-    'Gladiator',
+    'Gladiator 2',
     'Moana 2',
     'The Grand Budapest Hotel',
     'Mufasa',
