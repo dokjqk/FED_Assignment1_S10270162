@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineFix Log</title>
+    <link rel="icon" href="./images/feather-solid.svg">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,14 +14,14 @@
 </head>
 <body>
     <nav> 
-        <h1 class="main"><a href="index.html">CineFix</a></h1>
+        <h1 class="main"><a href="./index.html">CineFix</a></h1>
         <img src="./images/icon.jpg" alt="Icon image">
         <h1><a href="./user.html">USER</a></h1>
         <h1><a href="./films.html">FILMS</a></h1>
-        <h1><a href="./log.html">LOG</a></h1>
+        <h1><a href="./logsearch.html">LOG</a></h1>
     </nav>
     <div id="side-borders">
-        <h3 style="font-size: 2vw;">Back</h3>
+        <h3 style="font-size: 2vw;"><a href="./index.html">Back</a></h3>
         <div id="reviews-log">
             <div id="log-image">
                 <img src="" alt="Movie Image" style="height: 350px;">
@@ -38,20 +40,26 @@
             <div id="review-side">
                 <h3 style="font-size: 2vw; margin: 0;">I watched...</h3>
                 <h3 style="font-size: 2vw; margin: 2px;"></h3>
-                <input type="date">
+                <input type="date" id="review-date">
                 <textarea class="review-textbox" placeholder="Enter your review"></textarea>
             </div>
         </div>
  
     </div>
     <div id="blank-space"></div>
-
     <footer>
-        <h1 class="main">CineFix</h1>
-        <h2><a href="user.html">USER</a></h2>
-        <h2><a href="">FILMS</a></h2>
-        <h2><a href="">FRIENDS</a></h2>
-        <h2><a href="">LOG</a></h2>
+        <h1>CineFix</h1>
+        <div>
+            <h1 style="margin-bottom: 0;">Contact us</h1>
+            <h2>221B Baker Street</h2>
+            <h2>NW1 6XE</h2>
+        </div>
+        <div>
+            <h1 style="margin-bottom: 0;">Follow us</h1>
+            <h2>Instagram</h2>
+            <h2>Facebook</h2>
+            <h2>Twitter</h2>
+        </div>
     </footer>
     <script src="logScript.js"></script>
 </body>

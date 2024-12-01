@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineFix User</title>
+    <link rel="icon" href="./images/feather-solid.svg">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,10 +12,10 @@
 </head>
 <body>
     <nav> 
-        <h1 class="main"><a href="index.html">CineFix</a></h1>
+        <h1 class="main"><a href="./index.html">CineFix</a></h1>
         <h1><a href="./user.html">USER</a></h1>
         <h1><a href="./films.html">FILMS</a></h1>
-        <h1><a href="./test.html">LOG</a></h1>
+        <h1><a href="./logsearch.html">LOG</a></h1>
     </nav>
     <div id="side-borders">
         <section>
@@ -47,59 +48,61 @@
             <hr>
             <div id="new-friends">
                 <div id="review-bar">
-                    <img src="./images/venom-the-last-dance.jpg" alt="Vemon The Last Dance">
+                    <img src="./images/drive-my-car.jpg" alt="Drive My Car">
                 </div>
                 <div id="review-bar">
-                    <img src="./images/howl-s-moving-castle.jpg" alt="Howl's Moving Castle">
+                    <img src="./images/the-grand-budapest-hotel.jpg" alt="Grand Budapest Hotel">
                 </div>
                 <div id="review-bar">
-                    <img src="./images/dune-part-two.jpg" alt="Dune Part Two">
+                    <img src="./images/look-back.jpg" alt="Look Back">
                 </div>
                 <div id="review-bar">
-                    <img src="./images/the-truman-show.jpg" alt="The Truman Show">
+                    <img src="./images/parasite.jpg" alt="Parasite">
                 </div>
             </div>
         </section>
         <br>
         <section>
-            <h2>RECENT ACTIVITIES</h2>
+            <h2>RECENT ACTIVITES</h2>
             <hr>
             <div id="new-friends">
                 <div id="review-bar">
-                    <img src="./images/venom-the-last-dance.jpg" alt="Vemon The Last Dance">
+                    <img src="./images/my-neighbor-totoro.jpg" alt="my-neighbor-totoro">
                 </div>
                 <div id="review-bar">
-                    <img src="./images/howl-s-moving-castle.jpg" alt="Howl's Moving Castle">
+                    <img src="./images/look-back.jpg" alt="look-back">
                 </div>
                 <div id="review-bar">
-                    <img src="./images/dune-part-two.jpg" alt="Dune Part Two">
+                    <img src="./images/howl-s-moving-castle.jpg" alt="howl-s-moving-castle">
                 </div>
                 <div id="review-bar">
-                    <img src="./images/the-truman-show.jpg" alt="The Truman Show">
+                    <img src="./images/harry-potter-and-the philosopher's-stone.jpg" alt="harry-potter-and-the-philosopher-stone">
                 </div>
             </div>
         </section>
         <br>
         <section>
             <div id="recent-reviews-user-section">
-                <div class="item-80">    
+                <div class="item-80-user">    
                     <div>
-                        <h2>RECENT ACTIVITIES</h2>
+                        <h2>RECENT REVIEWS</h2>
                         <hr>
-                    </div>  
+                    </div>
+                    <div id="recent-reviews-user">
+                        <!-- Reviews will be dynamically inserted here -->
+                    </div>
                     <div>
-                        <div id="recent-reviews-user">
+                        <div id="recent-reviews-user-one">
                             <div id="#recent-reviews-img">
-                                <img src="./images/my-neighbor-totoro.jpg" alt="My Neighbor Totoro">
+                                <img src="./images/my-neighbor-totoro.jpg" alt="my-neighbor-totoro">
                             </div>
                             <div id="recent-reviews-text">
                                 <div id="recent-reviews-movie-name">
                                     <h3>My Neighbor Totoro</h3>
-                                    <h2>1988</h2>
                                 </div>
                                 <div id="recent-reviews-rating">
                                     <h3 class="stars">★★★★</h3>
-                                    <h2>Watched 20 Nov 2024</h2>
+                                    <h2>Watched 2024-11-20</h2>
                                 </div>
                                 <div>
                                     <h2>
@@ -114,18 +117,17 @@
                     </div>
                     <br>
                     <div>
-                        <div id="recent-reviews-user">
+                        <div id="recent-reviews-user-two">
                             <div id="#recent-reviews-img">
                                 <img src="./images/look-back.jpg" alt="Look Back">
                             </div>
                             <div id="recent-reviews-text">
                                 <div id="recent-reviews-movie-name">
                                     <h3>Look Back</h3>
-                                    <h2>2024</h2>
                                 </div>
                                 <div id="recent-reviews-rating">
                                     <h3 class="stars">★★★★★</h3>
-                                    <h2>Watched Nov 12 2024</h2>
+                                    <h2>Watched 2024-11-18</h2>
                                 </div>
                                 <div>
                                     <h2>
@@ -140,32 +142,29 @@
                     </div>
                     <br>
                     <div>
-                        <div id="recent-reviews-user">
+                        <div id="recent-reviews-user-three">
                             <div>
-                                <img src="./images/look-back.jpg" alt="">
+                                <img src="./images/howl-s-moving-castle.jpg" alt="">
                             </div>
                             <div id="recent-reviews-text">
                                 <div id="recent-reviews-movie-name">
-                                    <h3>Look Back</h3>
-                                    <h2>2024</h2>
+                                    <h3>Howl's Moving Castle</h3>
                                 </div>
                                 <div id="recent-reviews-rating">
-                                    <h3 class="stars">★★★★★</h3>
-                                    <h2>Watched Nov 12 2024</h2>
+                                    <h3 class="stars">★★★★</h3>
+                                    <h2>Watched 2024-11-15</h2>
                                 </div>
                                 <div>
                                     <h2>
-                                        It's gonna sit with me for a very long time. Absolutely beautiful piece of work. It talks about the dedication and motivation 
-                                        behind creating art. Why do people spend hours of their lives perfecting that one skill? Be it drawing, playing music or writing a novel? 
-                                        What motivates and inspires creatives like us? I've read the manga before and this hits just as hard or even harder knowing the story.
-                                        Something stirred in me deeply early in the film. Also see Fujino running in the rain was amazing.
+                                        God what a delight. The characters, the animation, the writing, everything is in tip-top shape here.
+                                         Probably one of my top 3 favorites from Ghibli
                                     </h2>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="item-20">
+                <div class="item-20-user">
                     <div id="diary">
                         <h2>DIARY</h2>
                         <hr>
@@ -176,8 +175,11 @@
                                 <h3>NOV</h3>
                             </div>
                             <div id="movie-diary-text">
+                                <div id="movie-diary-updated">
+                                </div>
                                 <h2>My Neighbor Totoro</h2>
                                 <h2>Look Back</h2>
+                                <h2>Howl's Moving Castle</h2>
                             </div>
                         </li>
                         <hr>
@@ -186,8 +188,8 @@
                                 <h3>OCT</h3>
                             </div>
                             <div id="movie-diary-text">
-                                <h2>My Neighbor Totoro</h2>
-                                <h2>Look Back</h2>
+                                <h2>The Batman</h2>
+                                <h2>Gladiator</h2>
                             </div>
                         </li>
                         <hr>
@@ -196,8 +198,8 @@
                                 <h3>SEP</h3>
                             </div>
                             <div id="movie-diary-text">
-                                <h2>My Neighbor Totoro</h2>
-                                <h2>Look Back</h2>
+                                <h2>Fight Club</h2>
+                                <h2>Spider-Man: Across the Spider Verse</h2>
                             </div>
                         </li>
                         <hr>
@@ -217,11 +219,19 @@
     </div>
     <div id="blank-space"></div>
     <footer>
-        <h1 class="main">CineFix</h1>
-        <h2><a href="user.html">USER</a></h2>
-        <h2><a href="">FILMS</a></h2>
-        <h2><a href="">FRIENDS</a></h2>
-        <h2><a href="">LOG</a></h2>
+        <h1>CineFix</h1>
+        <div>
+            <h1 style="margin-bottom: 0;">Contact us</h1>
+            <h2>221B Baker Street</h2>
+            <h2>NW1 6XE</h2>
+        </div>
+        <div>
+            <h1 style="margin-bottom: 0;">Follow us</h1>
+            <h2>Instagram</h2>
+            <h2>Facebook</h2>
+            <h2>Twitter</h2>
+        </div>
     </footer>
+    <script src="/script.js"></script>
 </body>
 </html>

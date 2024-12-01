@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineFix Films</title>
+    <link rel="icon" href="./images/feather-solid.svg">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,31 +16,68 @@
         <img src="./images/icon.jpg" alt="Icon image">
         <h1><a href="./user.html">USER</a></h1>
         <h1><a href="./films.html">FILMS</a></h1>
-        <h1><a href="./test.html">LOG</a></h1>
+        <h1><a href="./logsearch.html">LOG</a></h1>
     </nav>
     <div id="side-borders">
         <section>
             <h2 style="margin-top: 50px;">NOVEMBER RELEASES</h2>
             <hr>
             <div id="popular-friends-images">
-                <img src="./images/howl-s-moving-castle.jpg" alt="Howl's Moving Castle">
-                <img src="./images/dune-part-two.jpg" alt="Dune Part Two">
-                <img src="./images/venom-the-last-dance.jpg" alt="Vemon The Last Dance">
-                <img src="./images/the-truman-show.jpg" alt="The Truman Show">
-                <img src="./images/parasite.jpg" alt="Parasite">
+                <img src="./images/wicked.jpg" alt="wicked">
+                <img src="./images/moana-2.jpg" alt="moana-2">
+                <img src="./images/gladiator-2.jpg" alt="gladiator-2">
+                <img src="./images/red-one.jpg" alt="red-one">
+                <img src="./images/elevation.jpg" alt="elevation">
             </div>
         </section>
         <section>
             <h2 style="margin-top: 50px;">DECEMBER RELEASES</h2>
             <hr>
             <div id="popular-friends-images">
-                <img src="./images/howl-s-moving-castle.jpg" alt="Howl's Moving Castle">
-                <img src="./images/dune-part-two.jpg" alt="Dune Part Two">
-                <img src="./images/venom-the-last-dance.jpg" alt="Vemon The Last Dance">
-                <img src="./images/the-truman-show.jpg" alt="The Truman Show">
-                <img src="./images/parasite.jpg" alt="Parasite">
+                <img src="./images/sonic-the-hedgehog-3.jpg" alt="sonic-the-hedgehog-3">
+                <img src="./images/mufasa.jpg" alt="mufasa">
+                <img src="./images/the-lord-of-the-rings.jpg" alt="the-lord-of-the-rings">
+                <img src="./images/y2k.jpg" alt="y2k">
+                <img src="./images/the-fire-inside.jpg" alt="the-fire-inside">
             </div>
         </section>
+        <section>
+
+        </section>
+        <br>
+        <section>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('2020s')">2020s</button>
+                <button class="btn" onclick="filterSelection('2010s')">2010s</button>
+                <button class="btn" onclick="filterSelection('2000s')">2000s</button>
+                <button class="btn" onclick="filterSelection('1990s')">1990s</button>
+            </div>
+        
+            <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+            <div class="container-img">
+                <img src="./images/drive-my-car.jpg" alt="drive-my-car" class="filterDiv 2020s">
+                <img src="./images/dune-part-two.jpg" alt="dune-part-two" class="filterDiv 2020s">
+                <img src="./images/dune.jpg" alt="dune" class="filterDiv 2020s">
+                <img src="./images/elevation.jpg" alt="elevation" class="filterDiv 2020s">
+                <img src="./images/gladiator-2.jpg" alt="gladiator-2" class="filterDiv 2020s">
+                <img src="./images/harry-potter-and-the philosopher's-stone.jpg" alt="harry-potter" class="filterDiv 2000s">
+                <img src="./images/howl-s-moving-castle.jpg" alt="howls-moving-castle" class="filterDiv 2000s">
+                <img src="./images/look-back.jpg" alt="look-back" class="filterDiv 2020s">
+                <img src="./images/moana-2.jpg" alt="moana-2" class="filterDiv 2020s">
+                <img src="./images/mufasa.jpg" alt="mufasa" class="filterDiv 2020s">
+                <img src="./images/my-neighbor-totoro.jpg" alt="my-neighbor-totoro" class="filterDiv 1990s">
+                <img src="./images/parasite.jpg" alt="parasite" class="filterDiv 2010s">
+                <img src="./images/red-one.jpg" alt="red-one" class="filterDiv 2020s">
+                <img src="./images/scott-pilgrim-vs-the-world.jpg" alt="scott-pilgrim-vs-the-world" class="filterDiv 2010s">
+                <img src="./images/sonic-the-hedgehog-3.jpg" alt="sonic-the-hedgehog-3" class="filterDiv 2020s">
+                <img src="./images/the-grand-budapest-hotel.jpg" alt="the-grand-budapest-hotel" class="filterDiv 2010s" >
+                <img src="./images/the-truman-show.jpg" alt="the-truman-show" class="filterDiv 1990s">
+                <img src="./images/spirited-away.jpg" alt="spirited-away" class="filterDiv 2000s">
+                <img src="./images/iron-man.jpg" alt="iron-man" class="filterDiv 2000s">
+            </div>
+        </section>
+        <br>
         <section>
             <h2 style="margin-top: 50px;">LATEST NEWS</h2>
             <hr>
@@ -52,32 +90,40 @@
                 </div>
             </div>
             <br>
+            <div id="other-news">
+                <div id="other-news-items">
+                    <img src="./images/in-another-country.jpg" alt="A Traveler’s Needs">
+                    <h3>In Another Country</h3>
+                    <h2>Isabelle Huppert on Hong Sang-soo and the universal language of cinema.</h2>
+                </div>
+                <div id="other-news-items">
+                    <img src="./images/watch-this.jpg" alt="CineFix Watch This">
+                    <h3>Watchlist This!</h3>
+                    <h2>Our November 2024 picks of the best new bubbling-under films</h2>
+                </div>
+                <div id="other-news-items">
+                    <img src="./images/edgar-wright.jpg" alt="Edgar Wright">
+                    <h3>The Wright Stuff</h3>
+                    <h2>The CineFix community ranking of Edgar Wright’s films.</h2>
+                </div>
+            </div>
         </section>
-        <div id="other-news">
-            <div id="other-news-items">
-                <img src="./images/in-another-country.jpg" alt="A Traveler’s Needs">
-                <h3>In Another Country</h3>
-                <h2>Isabelle Huppert on Hong Sang-soo and the universal language of cinema.</h2>
-            </div>
-            <div id="other-news-items">
-                <img src="./images/watch-this.jpg" alt="CineFix Watch This">
-                <h3>Watchlist This!</h3>
-                <h2>Our November 2024 picks of the best new bubbling-under films</h2>
-            </div>
-            <div id="other-news-items">
-                <img src="./images/edgar-wright.jpg" alt="Edgar Wright">
-                <h3>The Wright Stuff</h3>
-                <h2>The CineFix community ranking of Edgar Wright’s films.</h2>
-            </div>
-        </div>
-
+        <script src="script.js"></script>
     </div>
     <div id="blank-space"></div>
     <footer>
-        <h1 class="main">CineFix</h1>
-        <h2><a href="user.html">USER</a></h2>
-        <h2><a href="">FILMS</a></h2>
-        <h2><a href="">FRIENDS</a></h2>
-        <h2><a href="">LOG</a></h2>
+        <h1>CineFix</h1>
+        <div>
+            <h1 style="margin-bottom: 0;">Contact us</h1>
+            <h2>221B Baker Street</h2>
+            <h2>NW1 6XE</h2>
+        </div>
+        <div>
+            <h1 style="margin-bottom: 0;">Follow us</h1>
+            <h2>Instagram</h2>
+            <h2>Facebook</h2>
+            <h2>Twitter</h2>
+        </div>
     </footer>
+    <script src="filmsort.js"></script>
 </body>

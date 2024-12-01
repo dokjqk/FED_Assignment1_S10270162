@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 body{
@@ -10,13 +9,14 @@ body{
 }
 .search-box{
     width: 600px;
-    background: #fff;
+    background: #476787;
     margin: 200px auto 0;
+    font-family: "Alata", sans-serif;
 }
 .row{
     display: flex;
     justify-content: center;
-    padding: 10px 20px;
+    padding: 5px 15px;
 
 }
 input{
@@ -48,5 +48,71 @@ button{
     cursor: pointer;
 }
 .result-box ul li:hover{
-    background: #e9f3ff;
+    background: #3b526f;
+}
+
+#save-button{
+    background: #273649;
+    color: #ffffff;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: "Albert Sans", sans-serif;
+}
+h1 {
+    font-family: "Alata", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2vw;
+}
+
+h2 {
+    font-family: "Albert Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 0;
+    font-size: 1.2vw;
+
+}
+
+h3 {
+    font-family: "Albert Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 0;
+    font-size: 1.2vw;
+}
+/* Navigation */
+a{
+    text-decoration: none;
+}
+nav {
+    background-color: #131a23;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    font-size: 1.2vw;
+    padding-left: 12%;
+    padding-right: 12%;
+    align-content: center;
+    align-items: center;
+}
+
+nav .main { 
+    flex-grow: 0.5;
+}
+
+nav img {    
+    max-width: 8%;    
+    max-height: 100%; 
+    border-radius: 50%;
+}
+
+
+nav button{
+    margin: 0;
+    border: 0;
 }
